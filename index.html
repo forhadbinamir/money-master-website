@@ -30,37 +30,39 @@
                 <h3 class="text-center py-2">Incom</h3>
                 <div class="d-flex justify-content-around align-items-center">
                     <p>Income:</p>
-                    <input class="border-2 text-center bg-white rounded py-1 px-1 mx-2" value="10000">
+                    <input id="monthly-income" class="border-2 text-center bg-white rounded py-1 px-1 mx-2" type="text">
                 </div>
                 <h3 class="text-center py-2">Expenses</h3>
                 <div class="d-flex justify-content-around align-items-center">
-                    <p>Food:</p>
+                    <label for="food-expenses">Food:</label>
                     <input id="food-expenses" class="border-2 text-center bg-white rounded py-1 px-1 my-1 mx-2"
-                        value='3000'>
+                        type="text">
                 </div>
                 <div class="d-flex justify-content-around align-items-center">
                     <p>Rent:</p>
                     <input id="rent-expenses" class="border-2 text-center bg-white rounded py-1 px-1 my-1 mx-2"
-                        value='2000'>
+                        type="text">
                 </div>
                 <div class="d-flex justify-content-around align-items-center">
                     <p>Clothe:</p>
                     <input id="clothe-expenses" class="border-2 text-center bg-white rounded py-1 px-1 my-1 mx-2"
-                        value="500">
+                        type="text">
                 </div>
                 <button id="calculate" class="btn btn-primary my-1 px-4">Calculate</button>
-                <p class="mt-1">Total Expenses: 5500</p>
-                <p>Balance: 4500</p>
-                <div class="d-flex justify-content-around">
+                <p class="mt-1">Total Expenses: <span id="total-expenses">5500</span></p>
+                <p>Balance: <span id="balance-Money">4500</span></p>
+                <div class="d-flex justify-content-around align-items-center">
                     <p>Save: </p>
-                    <p class="bg-dark px-4 py-1 rounded text-white">20</p>
+                    <input id="percentage" class="bg-dark px-1 w-25 text-center rounded text-white">
                     <p>%</p>
-                    <p class="bg-primary px-5 py-1 rounded text-white">Save</p>
+                    <button id="save-btn" class="bg-primary px-1 w-50 text-center rounded text-white">
+                        Save</button>
                 </div>
-                <p class="fw-bold">Saving Amount: 2000</p>
-                <p class="fw-bold">Remaining Balance: 2500</p>
+                <p class="fw-bold">Saving Amount: <span id="saving-amount">2000</span></p>
+                <p class="fw-bold">Remaining Balance: <span id="remainig-amount">2500</span></p>
             </div>
         </div>
+
     </main>
     <footer>
     </footer>
